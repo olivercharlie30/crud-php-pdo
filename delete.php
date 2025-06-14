@@ -16,7 +16,7 @@ function deleteUser($userId){
         $stmt->execute();
 
         echo "deleted user data!.";
-
+// TRY CATCH allows you to define a block of code to be tested for errors while it is being executed. 
     } catch (PDOException $e) {
         echo "delete failured:" .$e->getMessage();
     }

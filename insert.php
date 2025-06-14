@@ -19,7 +19,7 @@ function insert($fullname, $email, $address){
         $stmt->execute();
         
         echo "new User Registered!.";
-    
+    // TRY CATCH allows you to define a block of code to be tested for errors while it is being executed. 
     } catch (PDOException $e) {
         echo "insert failured:" .$e->getMessage();
     }
